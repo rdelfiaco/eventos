@@ -11,6 +11,6 @@ export class AppComponent {
   title = 'Detalhe do evento:' ;
 }
 
-function carregaEvento(){
+function loadEvento(){
 
 }
