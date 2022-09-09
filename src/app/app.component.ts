@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 
 
 export class AppComponent implements OnInit  {
-  title = 'Detalhe do evento:';
+  title = 'Detalhe do evento';
   evento: any;
 
   constructor(
@@ -51,7 +51,7 @@ export class AppComponent implements OnInit  {
   }
 
   eventos = new FormGroup({
-    setor: new FormControl('', [Validators.required]),
+    setor: new FormControl(''),
     tipo: new FormControl(''),
     motivo: new FormControl(''),
     status: new FormControl(''),
