@@ -41,6 +41,41 @@
     <form [formGroup]="eventos" (ngSubmit)="onSubmit()">
       <div class="form-field">
         <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Cliente</mat-label>
+          <input matInput id="cliente" type="text" formControlName="cliente" />
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Motivo</mat-label>
+          <input matInput id="motivo" type="text" formControlName="motivo">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Observação origem</mat-label>
+          <textarea matInput rows=3 id="observacaoOrigem" formControlName="observacaoOrigem"></textarea>
+        </mat-form-field>
+
+        <table class="example-full-width" cellspacing="0"><tr>
+          <td><mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Criado em</mat-label>
+            <input matInput>
+          </mat-form-field></td>
+          <td><mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Dias percorridos</mat-label>
+            <input matInput>
+          </mat-form-field></td>
+          <td><mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Resolver até</mat-label>
+            <input matInput>
+          </mat-form-field></td>
+        </tr></table>
+
+    
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Destinatário</mat-label>
+          <input matInput id="destinatario" type="text" formControlName="destinatario" />
+        </mat-form-field>
+
+
+        <mat-form-field class="example-full-width" appearance="fill">
           <mat-label>Setor</mat-label>
           <input matInput id="setor" type="text" formControlName="setor">
         </mat-form-field>
@@ -48,38 +83,7 @@
           <mat-label>Tipo</mat-label>
           <input matInput id="tipo" type="text" formControlName="tipo">
         </mat-form-field>
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Motivo</mat-label>
-          <input matInput id="motivo" type="text" formControlName="motivo">
-        </mat-form-field>
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Status</mat-label>
-          <input matInput id="status" type="text" formControlName="status">
-        </mat-form-field>
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Prioridade</mat-label>
-          <input matInput id="prioridade" type="text" formControlName="prioridade">
-        </mat-form-field>
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Resolver até</mat-label>
-          <input matInput id="resolverAte" type="text" formControlName="resolverAte" />
-        </mat-form-field>
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Respondido em</mat-label>
-          <input matInput id="respondidoEm" type="text" formControlName="respondidoEm" />
-        </mat-form-field>
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Destinatário</mat-label>
-          <input matInput id="destinatario" type="text" formControlName="destinatario" />
-        </mat-form-field>
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Cliente</mat-label>
-          <input matInput id="cliente" type="text" formControlName="cliente" />
-        </mat-form-field>
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Observação origem</mat-label>
-          <textarea matInput rows=3 id="observacaoOrigem" formControlName="observacaoOrigem"></textarea>
-        </mat-form-field>
+
       </div>
       <div class="buttons-actions">
         <button class="button-actions" mat-flat-button type="submit" color="primary">
