@@ -44,10 +44,18 @@
           <mat-label>Cliente</mat-label>
           <input matInput id="cliente" type="text" formControlName="cliente" />
         </mat-form-field>
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Motivo</mat-label>
-          <input matInput id="motivo" type="text" formControlName="motivo">
-        </mat-form-field>
+
+        <table class="example-full-width" cellspacing="0"><tr>
+          <td><mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Tipo</mat-label>
+            <input matInput>
+          </mat-form-field></td>
+          <td><mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Motivo</mat-label>
+            <input matInput id="motivo" type="text" formControlName="motivo">
+          </mat-form-field></td>
+        </tr></table>
+
         <mat-form-field class="example-full-width" appearance="fill">
           <mat-label>Observação origem</mat-label>
           <textarea matInput rows=3 id="observacaoOrigem" formControlName="observacaoOrigem"></textarea>
@@ -68,29 +76,35 @@
           </mat-form-field></td>
         </tr></table>
 
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Observação Retorno</mat-label>
+          <textarea matInput rows=3 id="observacaoRetorno" formControlName="observacaoRetorno"></textarea>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Resposta</mat-label>
+          <input matInput id="resposta" type="text" formControlName="resposta">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Resolvido por:</mat-label>
+          <input matInput id="resolvidoPor" type="text" formControlName="resolvidoPor">
+        </mat-form-field>
     
         <mat-form-field class="example-full-width" appearance="fill">
           <mat-label>Destinatário</mat-label>
           <input matInput id="destinatario" type="text" formControlName="destinatario" />
         </mat-form-field>
 
-
         <mat-form-field class="example-full-width" appearance="fill">
           <mat-label>Setor</mat-label>
           <input matInput id="setor" type="text" formControlName="setor">
         </mat-form-field>
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Tipo</mat-label>
-          <input matInput id="tipo" type="text" formControlName="tipo">
-        </mat-form-field>
+
 
       </div>
       <div class="buttons-actions">
-        <button class="button-actions" mat-flat-button type="submit" color="primary">
-          Concluir
-        </button>
-        <button class="button-actions" mat-flat-button type="button" color="primary"
-          (click)="onRecordButton()">Reagendar</button>
+
         <button class="button-actions" mat-flat-button type="button" color="primary"
           (click)="onResqueduleButton()">Gravar</button>
         <button class="button-actions" mat-flat-button type="button" color="primary"
@@ -98,11 +112,9 @@
         <button class="button-actions" mat-flat-button type="button" color="primary"
           (click)="onHistoricButton()">Histórico</button>
         <button class="button-actions" mat-flat-button type="button" color="primary"
-          (click)="onRelatedProductsButton()">Produtos
-          Relacionados</button>
+          (click)="onRelatedProductsButton()">Produtos Relacionados</button>
         <button class="button-actions" mat-flat-button type="button" color="primary"
-          (click)="onRelatedImageButton()">Imagens
-          Relacionados</button>
+          (click)="onRelatedImageButton()">Imagens Relacionados</button>
         <button class="button-actions" mat-flat-button type="button" color="primary"
           (click)="onCloseButton()">fechar</button>
       </div>

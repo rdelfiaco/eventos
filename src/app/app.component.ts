@@ -62,6 +62,8 @@ export class AppComponent implements OnInit  {
     destinatario: new FormControl(''),
     cliente: new FormControl(''),
     observacaoOrigem: new FormControl(''),
+    resolvidoPor: new FormControl(''),
+    resposta: new FormControl('')
   });
 }
 
